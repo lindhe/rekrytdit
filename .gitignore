@@ -1,0 +1,7 @@
+# VIM files
+*~
+*.swp
+
+# A format to hide files for testing purposes
+.hidden.*
+.ignore

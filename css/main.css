@@ -1,22 +1,83 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  padding: 0;
+  margin: 0; }
 
+#main-header {
+  width: 100%;
+  height: 100px;
+  /*text-align: center;*/
+  background-image: linear-gradient(to bottom, #3c3c3c 0, #222 100%);
+  display: block; }
 
+#top-menu {
+  /**display: inline-table; ??*/
+  position: relative; }
 
+li {
+  display: inline-block;
+  margin: 0em 2em; }
+  li ul {
+    display: none;
+    position: absolute;
+    top: 100%; }
 
+#top-menu li:hover > ul {
+  display: block; }
 
+/*main {
+    min-width: 200%;
+    overflow: visible;
+    padding: 1em 0em 1em 25%;
+}
 
+main section {
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}*/
+body main {
+  display: block;
+  width: 100%; }
 
+.section-wrapper {
+  /*display: inline-block;*/
+  display: block;
+  border: 1px solid black;
+  /*margin-right: 15em;*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 1130px; }
+  .section-wrapper section {
+    display: flex;
+    flex-wrap: wrap; }
+    .section-wrapper section article {
+      display: flex;
+      flex-basis: 400px;
+      flex-grow: 4; }
+    .section-wrapper section aside {
+      display: flex;
+      flex-basis: 200px;
+      flex-grow: 1; }
 
+.section-content {
+  display: block; }
 
+/*main section * {
+    display: flex;
+}
 
+main section article {
+    flex-grow: 4;
+    flex-basis: 350px;
+}
 
+main section aside {
+    flex-grow: 1;
+    flex-basis: 250px;
+}*/
 
-
-
-
-
-
+/*# sourceMappingURL=main.css.map */

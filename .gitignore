@@ -5,3 +5,7 @@
 # A format to hide files for testing purposes
 .hidden.*
 .ignore
+
+# SASS
+.sass-cache
+*.css.map

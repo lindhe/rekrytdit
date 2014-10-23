@@ -21,48 +21,82 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="hidden">
-            <header class="">
-                <h1 class="">Title</h1>
-                <nav role="" id="">
-                    <ul id="top-menu">
-                        <li><a href="#">Hem</a></li>
-                        <li><a href="#">Om D</a>
-                            <ul>
-                                <li><a href="#">Historia</a></li>
-                                <li><a href="#">Om sektionen</a></li>
-                                <li><a href="#">Varför D?</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Kalender</a></li>
-                        <li><a href="#">Kontakta oss</a></li>
-                        <li><a href="#">Övrig information</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
+        <header class="container">
+            <nav class="row" role="tablist">
+                <ul class="nav nav-tabs navbar-right">
+                    <li class="active"><a href="#Data" role="tab" data-toggle="tab">Data</a></li>
+                    <li><a href="#Data-VS-IT" role="tab" data-toggle="tab">vs</a></li>
+                    <li><a href="#IT" role="tab" data-toggle="tab">IT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-header">
+                <img id="logo" src="" class="hidden-xs hidden"/>
+                <h1 class="text-center">Title</h1>
+            </div>
+            <nav class ="row" role="navigation">
+                <ul class="nav nav-pills nav-justified">
+                    <li><a href="#">Hem</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Om D</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Historia</a></li>
+                            <li><a href="#">Om sektionen</a></li>
+                            <li><a href="#">Varför D?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Kalender</a></li>
+                    <li><a href="#">Kontakta oss</a></li>
+                    <li><a href="#">Övrig information</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <main role="main" id="main" class="container border">
-          <section id="D" class="department data row">
-              <article class="col-xs-12 col-sm-9">
-                <div class="section-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo, orci sit amet pulvinar tempor, ante tellus fermentum tellus, quis tempus turpis urna ac ante. Integer leo neque, feugiat vitae aliquet at, facilisis eu justo. Nam venenatis nunc sed porttitor rutrum. Nunc non est tristique, efficitur magna id, ultrices odio. Fusce elementum lobortis lacus, ut pellentesque mauris ultricies sit amet. Nulla scelerisque nisi eu ex laoreet eleifend. Mauris pretium imperdiet lacus, sit amet tempor ligula egestas at.</p>
+        <main id="main" class="container border tab-content" role="main">
+          <section class="row tab-pane fade active" id="Data">
+                <article class="col-xs-12 col-sm-9">
+                    <div class="section-content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis elit et velit mollis ullamcorper. Mauris scelerisque in neque quis imperdiet. Vivamus in eros id dui mattis molestie eget ac lorem. Mauris fringilla sapien at auctor imperdiet. Etiam aliquet sem et laoreet rhoncus. Phasellus posuere condimentum volutpat. Nulla sollicitudin, tortor non dignissim faucibus, lectus tortor pretium justo, eget malesuada risus lorem quis est. Etiam mattis, nunc eu viverra convallis, enim eros sollicitudin magna, non viverra diam enim et metus. Maecenas at scelerisque sem. In suscipit dolor eget malesuada accumsan. Etiam non mattis neque, et semper lectus. Aenean non congue tortor. Praesent ac libero ante. Donec quis erat scelerisque, ultricies libero quis, pulvinar quam. Morbi ultrices enim neque, ac varius velit sollicitudin non. Proin id vulputate dui, at tempus neque.</p>
 
-                  <p>Nam porta risus sed tristique semper. Sed vel est diam. In venenatis leo in diam porta, et tempus arcu maximus. Proin sed tristique odio. In tempor faucibus ligula et tincidunt. Sed pharetra fermentum gravida. Sed sed arcu est. Proin interdum nisl sed metus rutrum, mattis sodales enim commodo. Proin tincidunt nibh at aliquam facilisis.</p>
-                </div>
-              </article>
+                      <p>Nunc sit amet hendrerit ex, sit amet suscipit ante. Nunc pulvinar sapien risus, non pretium augue venenatis et. Etiam lacinia condimentum neque sit amet aliquet. Nunc vitae orci eget lectus tincidunt egestas. Sed ac tortor gravida, pretium nunc eget, aliquet neque. Etiam fermentum ut dolor posuere suscipit. Curabitur porttitor turpis ex, et commodo ante suscipit non. Vivamus gravida dapibus mauris, ut pharetra ante porttitor non. Quisque nulla sapien, ultricies vel tortor et, elementum maximus quam.</p>
+                    </div>
+                </article>
 
-              <aside class="col-xs-12 col-sm-3">
-                <h3>aside</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-            </aside>
+                <aside class="col-xs-12 col-sm-3">
+                    <h3>aside</h3>
+                    <p>Phasellus pretium nisi sodales, consequat diam vel, vestibulum purus. In posuere rhoncus nisi eget faucibus. Nulla ultricies dui at mi iaculis, sed sodales arcu fermentum. Nunc sagittis cursus ex vehicula viverra. Maecenas id nisi venenatis, vestibulum tortor sed, pretium mauris. Nullam at justo vitae lacus pulvinar finibus. Vivamus varius massa ante, lobortis commodo erat placerat et. Phasellus justo diam, elementum at placerat at, mollis eget leo.</p>
+                </aside>
+          </section>
+          <section class="row tab-pane fade" id="Data-VS-IT">
+                <article class="col-xs-12">
+                    <div class="section-content">
+                      <p>Maecenas et ligula odio. Sed consequat sem elit, efficitur faucibus ex bibendum quis. Suspendisse finibus fermentum ullamcorper. Pellentesque molestie elit sit amet posuere suscipit. Quisque nisi justo, rhoncus ac efficitur quis, convallis ut arcu. Morbi tincidunt lacus ac porta lacinia. Vestibulum eu metus sed dui pellentesque hendrerit eget ut ex.</p>
+
+                      <p>Phasellus id leo egestas, vulputate mi eu, tempor ante. Sed nec convallis purus. Donec eu enim at augue vulputate hendrerit. Aenean egestas ex sit amet ornare vulputate. Vivamus nec dolor ex. In placerat at tellus quis pulvinar. Aenean vitae lectus eu enim feugiat ultricies. Nullam mollis arcu tristique purus lacinia, non interdum ante rutrum. Suspendisse feugiat metus in lorem porttitor cursus. Suspendisse maximus pulvinar aliquet. Pellentesque varius felis a placerat accumsan. Mauris non maximus ante. Maecenas tincidunt pellentesque ultrices.</p>
+                    </div>
+                </article>
+          </section>
+          <section class="row tab-pane fade" id="IT">
+                <article class="col-xs-12 col-sm-9">
+                    <div class="section-content">
+                      <p>Suspendisse ac quam ac nibh accumsan tincidunt. Nulla venenatis odio sit amet elit lacinia, in aliquet est cursus. Pellentesque egestas cursus laoreet. Ut vitae ligula dapibus, volutpat nibh laoreet, bibendum libero. Nulla metus metus, ullamcorper nec orci sed, ullamcorper tempor mi. Etiam eget tortor a lectus hendrerit tempus. Etiam vehicula felis in erat sodales, sed porttitor elit volutpat. Donec bibendum dolor dui, vitae pulvinar sapien suscipit vitae.</p>
+
+                      <p>Curabitur eros purus, consectetur ac erat et, interdum tempor purus. Proin pulvinar justo non porta tincidunt. Vivamus placerat, tortor quis congue viverra, eros dui dignissim nunc, et fermentum massa risus id lacus. Suspendisse potenti. Donec urna risus, pharetra et felis ut, porttitor feugiat lectus. Sed hendrerit lacus eu erat cursus dignissim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ipsum ut enim hendrerit feugiat. Curabitur vel elit augue. In luctus posuere nibh non ultricies. Nulla sagittis felis a lorem pellentesque, in feugiat nibh accumsan. Phasellus feugiat nec ipsum in scelerisque. Curabitur sodales, tortor id sagittis cursus, ipsum dolor tincidunt eros, et malesuada nisi mauris non nibh. Curabitur consectetur, erat ut consectetur lobortis, nunc urna placerat ipsum, vel hendrerit nisi magna ultricies eros. Duis vitae urna nec nunc hendrerit aliquam.</p>
+                    </div>
+                </article>
+
+                <aside class="col-xs-12 col-sm-3">
+                    <h3>aside</h3>
+                    <p>Morbi faucibus lorem non convallis venenatis. Vestibulum commodo mi id dolor feugiat viverra. Aenean luctus bibendum sapien eget tristique. Mauris laoreet tempus mauris, quis convallis metus porttitor vel. Praesent ornare porta ipsum, at dapibus turpis sagittis eu. Phasellus scelerisque viverra arcu, id bibendum velit sodales ullamcorper. Aliquam hendrerit rutrum tortor ut interdum. Curabitur bibendum ac velit quis blandit. Sed cursus euismod viverra. Morbi feugiat tortor vitae orci volutpat tincidunt. Morbi pretium sapien vitae lacus lobortis, sit amet auctor sem tempor. Phasellus rhoncus augue eget diam rutrum, ac viverra elit consectetur.</p>
+                </aside>
           </section>
         </main>
 
-      <footer class="hidden">
-        <p>Footer!!!</p>
+      <footer class="row">
+        <div class="col-xs-12">
+            <p>Footer!!!</p>
+        </div>
       </footer>
-    </div> <!-- /container -->        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- REMOVE http: when done!! -->
+
+      <!-- /container --><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- REMOVE http: when done!! -->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>

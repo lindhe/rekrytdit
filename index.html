@@ -20,8 +20,44 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <header class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <nav class="row" role="tablist">
+                    <ul class="nav nav-tabs navbar-right">
+                        <li class="active"><a href="#Data" role="tab" data-toggle="tab">Data</a></li>
+                        <li><a href="#Data-VS-IT" role="tab" data-toggle="tab">vs</a></li>
+                        <li><a href="#IT" role="tab" data-toggle="tab">IT</a></li>
+                    </ul>
+                </nav>
+            </div>
+           <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Datateknik</a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-navigation">
+                <nav class ="row" role="navigation">
+                    <ul class="nav nav-pills nav-justified">
+                        <li><a class="active" href="#">Hem</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Om D</a>
+                            <ul class="dropdown-menu" role="menu"><!-- ska kanske inte vara synlig för små enheter då navbar-collapse inte är konsekvent med utseendet för undermenyer. Tänk i så fall  på åtkomlighet för meny alternativen! -->
+                                <li><a href="#">Historia</a></li>
+                                <li><a href="#">Om sektionen</a></li>
+                                <li><a href="#">Varför D?</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Kalender</a></li>
+                        <li><a href="#">Kontakta oss</a></li>
+                        <li><a href="#">Övrig information</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+        <header class="container hidden">
             <nav class="row" role="tablist">
                 <ul class="nav nav-tabs navbar-right">
                     <li class="active"><a href="#Data" role="tab" data-toggle="tab">Data</a></li>
@@ -33,39 +69,26 @@
                 <img id="logo" src="" class="hidden-xs hidden"/>
                 <h1 class="text-center">Title</h1>
             </div>
-            <nav class ="row" role="navigation">
-                <ul class="nav nav-pills nav-justified">
-                    <li><a href="#">Hem</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Om D</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Historia</a></li>
-                            <li><a href="#">Om sektionen</a></li>
-                            <li><a href="#">Varför D?</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Kalender</a></li>
-                    <li><a href="#">Kontakta oss</a></li>
-                    <li><a href="#">Övrig information</a></li>
-                </ul>
-            </nav>
         </header>
 
         <main id="main" class="container border tab-content" role="main">
-          <section class="row tab-pane fade active" id="Data">
-                <article class="col-xs-12 col-sm-9">
-                    <div class="section-content">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis elit et velit mollis ullamcorper. Mauris scelerisque in neque quis imperdiet. Vivamus in eros id dui mattis molestie eget ac lorem. Mauris fringilla sapien at auctor imperdiet. Etiam aliquet sem et laoreet rhoncus. Phasellus posuere condimentum volutpat. Nulla sollicitudin, tortor non dignissim faucibus, lectus tortor pretium justo, eget malesuada risus lorem quis est. Etiam mattis, nunc eu viverra convallis, enim eros sollicitudin magna, non viverra diam enim et metus. Maecenas at scelerisque sem. In suscipit dolor eget malesuada accumsan. Etiam non mattis neque, et semper lectus. Aenean non congue tortor. Praesent ac libero ante. Donec quis erat scelerisque, ultricies libero quis, pulvinar quam. Morbi ultrices enim neque, ac varius velit sollicitudin non. Proin id vulputate dui, at tempus neque.</p>
+            <section class="row tab-pane fade active department" id="Data">
+                <section class="row">
+                    <article class="col-xs-12 col-sm-8">
+                        <div class="section-content">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis elit et velit mollis ullamcorper. Mauris scelerisque in neque quis imperdiet. Vivamus in eros id dui mattis molestie eget ac lorem. Mauris fringilla sapien at auctor imperdiet. Etiam aliquet sem et laoreet rhoncus. Phasellus posuere condimentum volutpat. Nulla sollicitudin, tortor non dignissim faucibus, lectus tortor pretium justo, eget malesuada risus lorem quis est. Etiam mattis, nunc eu viverra convallis, enim eros sollicitudin magna, non viverra diam enim et metus. Maecenas at scelerisque sem. In suscipit dolor eget malesuada accumsan. Etiam non mattis neque, et semper lectus. Aenean non congue tortor. Praesent ac libero ante. Donec quis erat scelerisque, ultricies libero quis, pulvinar quam. Morbi ultrices enim neque, ac varius velit sollicitudin non. Proin id vulputate dui, at tempus neque.</p>
 
-                      <p>Nunc sit amet hendrerit ex, sit amet suscipit ante. Nunc pulvinar sapien risus, non pretium augue venenatis et. Etiam lacinia condimentum neque sit amet aliquet. Nunc vitae orci eget lectus tincidunt egestas. Sed ac tortor gravida, pretium nunc eget, aliquet neque. Etiam fermentum ut dolor posuere suscipit. Curabitur porttitor turpis ex, et commodo ante suscipit non. Vivamus gravida dapibus mauris, ut pharetra ante porttitor non. Quisque nulla sapien, ultricies vel tortor et, elementum maximus quam.</p>
-                    </div>
-                </article>
+                          <p>Nunc sit amet hendrerit ex, sit amet suscipit ante. Nunc pulvinar sapien risus, non pretium augue venenatis et. Etiam lacinia condimentum neque sit amet aliquet. Nunc vitae orci eget lectus tincidunt egestas. Sed ac tortor gravida, pretium nunc eget, aliquet neque. Etiam fermentum ut dolor posuere suscipit. Curabitur porttitor turpis ex, et commodo ante suscipit non. Vivamus gravida dapibus mauris, ut pharetra ante porttitor non. Quisque nulla sapien, ultricies vel tortor et, elementum maximus quam.</p>
+                        </div>
+                    </article>
 
-                <aside class="col-xs-12 col-sm-3">
-                    <h3>aside</h3>
-                    <p>Phasellus pretium nisi sodales, consequat diam vel, vestibulum purus. In posuere rhoncus nisi eget faucibus. Nulla ultricies dui at mi iaculis, sed sodales arcu fermentum. Nunc sagittis cursus ex vehicula viverra. Maecenas id nisi venenatis, vestibulum tortor sed, pretium mauris. Nullam at justo vitae lacus pulvinar finibus. Vivamus varius massa ante, lobortis commodo erat placerat et. Phasellus justo diam, elementum at placerat at, mollis eget leo.</p>
-                </aside>
-          </section>
-          <section class="row tab-pane fade" id="Data-VS-IT">
+                    <aside class="col-xs-12 col-sm-4">
+                        <h3>aside</h3>
+                        <p>Phasellus pretium nisi sodales, consequat diam vel, vestibulum purus. In posuere rhoncus nisi eget faucibus. Nulla ultricies dui at mi iaculis, sed sodales arcu fermentum. Nunc sagittis cursus ex vehicula viverra. Maecenas id nisi venenatis, vestibulum tortor sed, pretium mauris. Nullam at justo vitae lacus pulvinar finibus. Vivamus varius massa ante, lobortis commodo erat placerat et. Phasellus justo diam, elementum at placerat at, mollis eget leo.</p>
+                    </aside>
+                </section>
+            </section>
+            <section class="row tab-pane fade" id="Data-VS-IT">
                 <article class="col-xs-12">
                     <div class="section-content">
                       <p>Maecenas et ligula odio. Sed consequat sem elit, efficitur faucibus ex bibendum quis. Suspendisse finibus fermentum ullamcorper. Pellentesque molestie elit sit amet posuere suscipit. Quisque nisi justo, rhoncus ac efficitur quis, convallis ut arcu. Morbi tincidunt lacus ac porta lacinia. Vestibulum eu metus sed dui pellentesque hendrerit eget ut ex.</p>
@@ -73,9 +96,9 @@
                       <p>Phasellus id leo egestas, vulputate mi eu, tempor ante. Sed nec convallis purus. Donec eu enim at augue vulputate hendrerit. Aenean egestas ex sit amet ornare vulputate. Vivamus nec dolor ex. In placerat at tellus quis pulvinar. Aenean vitae lectus eu enim feugiat ultricies. Nullam mollis arcu tristique purus lacinia, non interdum ante rutrum. Suspendisse feugiat metus in lorem porttitor cursus. Suspendisse maximus pulvinar aliquet. Pellentesque varius felis a placerat accumsan. Mauris non maximus ante. Maecenas tincidunt pellentesque ultrices.</p>
                     </div>
                 </article>
-          </section>
-          <section class="row tab-pane fade" id="IT">
-                <article class="col-xs-12 col-sm-9">
+            </section>
+            <section class="row tab-pane fade" id="IT">
+                <article class="col-xs-12 col-sm-8">
                     <div class="section-content">
                       <p>Suspendisse ac quam ac nibh accumsan tincidunt. Nulla venenatis odio sit amet elit lacinia, in aliquet est cursus. Pellentesque egestas cursus laoreet. Ut vitae ligula dapibus, volutpat nibh laoreet, bibendum libero. Nulla metus metus, ullamcorper nec orci sed, ullamcorper tempor mi. Etiam eget tortor a lectus hendrerit tempus. Etiam vehicula felis in erat sodales, sed porttitor elit volutpat. Donec bibendum dolor dui, vitae pulvinar sapien suscipit vitae.</p>
 
@@ -83,16 +106,19 @@
                     </div>
                 </article>
 
-                <aside class="col-xs-12 col-sm-3">
+                <aside class="col-xs-12 col-sm-4">
                     <h3>aside</h3>
                     <p>Morbi faucibus lorem non convallis venenatis. Vestibulum commodo mi id dolor feugiat viverra. Aenean luctus bibendum sapien eget tristique. Mauris laoreet tempus mauris, quis convallis metus porttitor vel. Praesent ornare porta ipsum, at dapibus turpis sagittis eu. Phasellus scelerisque viverra arcu, id bibendum velit sodales ullamcorper. Aliquam hendrerit rutrum tortor ut interdum. Curabitur bibendum ac velit quis blandit. Sed cursus euismod viverra. Morbi feugiat tortor vitae orci volutpat tincidunt. Morbi pretium sapien vitae lacus lobortis, sit amet auctor sem tempor. Phasellus rhoncus augue eget diam rutrum, ac viverra elit consectetur.</p>
                 </aside>
-          </section>
+            </section>
         </main>
 
-      <footer class="row">
-        <div class="col-xs-12">
-            <p>Footer!!!</p>
+      <footer class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p>Footer!!!</p>
+            </div>
+            <!-- Ska innehålla info om copyright etc, kontakta oss, länkar till chalmers, kanske info om hur sidan skapats-->
         </div>
       </footer>
 

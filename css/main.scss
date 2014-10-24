@@ -19,3 +19,10 @@ $it-color: #09CDDA;
 .department nav {
     margin-bottom: 2em;
 }
+
+#main { /*Fix for the width on xs devices where #main becomes slightly too wide*/
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+

@@ -21,7 +21,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <nav class="navbar navbar-default" role="navigation">
-            <div class="container-fluid">
+            <div class="container">
                 <nav class="row" role="tablist">
                     <ul class="nav nav-tabs navbar-right">
                         <li class="active"><a href="#Data" role="tab" data-toggle="tab">Data</a></li>
@@ -29,50 +29,36 @@
                         <li><a href="#IT" role="tab" data-toggle="tab">IT</a></li>
                     </ul>
                 </nav>
-            </div>
-           <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navigation">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Datateknik</a>
-            </div>
-            <div class="collapse navbar-collapse" id="main-navigation">
-                <nav class ="row" role="navigation">
-                    <ul class="nav nav-pills nav-justified">
-                        <li><a class="active" href="#">Hem</a></li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Om D</a>
-                            <ul class="dropdown-menu" role="menu"><!-- ska kanske inte vara synlig för små enheter då navbar-collapse inte är konsekvent med utseendet för undermenyer. Tänk i så fall  på åtkomlighet för meny alternativen! -->
-                                <li><a href="#">Historia</a></li>
-                                <li><a href="#">Om sektionen</a></li>
-                                <li><a href="#">Varför D?</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Kalender</a></li>
-                        <li><a href="#">Kontakta oss</a></li>
-                        <li><a href="#">Övrig information</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </nav>
-        <header class="container hidden">
-            <nav class="row" role="tablist">
-                <ul class="nav nav-tabs navbar-right">
-                    <li class="active"><a href="#Data" role="tab" data-toggle="tab">Data</a></li>
-                    <li><a href="#Data-VS-IT" role="tab" data-toggle="tab">vs</a></li>
-                    <li><a href="#IT" role="tab" data-toggle="tab">IT</a></li>
-                </ul>
+               <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Datateknik</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-navigation">
+                    <nav class ="row" role="navigation">
+                        <ul class="nav nav-pills nav-justified">
+                            <li><a class="active" href="#">Hem</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Om D</a>
+                                <ul class="dropdown-menu" role="menu"><!-- ska kanske inte vara synlig för små enheter då navbar-collapse inte är konsekvent med utseendet för undermenyer. Tänk i så fall  på åtkomlighet för meny alternativen! -->
+                                    <li><a href="#">Historia</a></li>
+                                    <li><a href="#">Om sektionen</a></li>
+                                    <li><a href="#">Varför D?</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Kalender</a></li>
+                            <li><a href="#">Kontakta oss</a></li>
+                            <li><a href="#">Övrig information</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </nav>
-            <div class="nav-header">
-                <img id="logo" src="" class="hidden-xs hidden"/>
-                <h1 class="text-center">Title</h1>
-            </div>
-        </header>
-
+        </div>
         <main id="main" class="container border tab-content" role="main">
-            <section class="row tab-pane fade active department" id="Data">
+            <section class="row tab-pane fade in active data department" id="Data">
                 <section class="row">
                     <article class="col-xs-12 col-sm-8">
                         <div class="section-content">
@@ -88,7 +74,7 @@
                     </aside>
                 </section>
             </section>
-            <section class="row tab-pane fade" id="Data-VS-IT">
+            <section class="row tab-pane fade vs" id="Data-VS-IT">
                 <article class="col-xs-12">
                     <div class="section-content">
                       <p>Maecenas et ligula odio. Sed consequat sem elit, efficitur faucibus ex bibendum quis. Suspendisse finibus fermentum ullamcorper. Pellentesque molestie elit sit amet posuere suscipit. Quisque nisi justo, rhoncus ac efficitur quis, convallis ut arcu. Morbi tincidunt lacus ac porta lacinia. Vestibulum eu metus sed dui pellentesque hendrerit eget ut ex.</p>
@@ -97,7 +83,7 @@
                     </div>
                 </article>
             </section>
-            <section class="row tab-pane fade" id="IT">
+            <section class="row tab-pane fade it department" id="IT">
                 <article class="col-xs-12 col-sm-8">
                     <div class="section-content">
                       <p>Suspendisse ac quam ac nibh accumsan tincidunt. Nulla venenatis odio sit amet elit lacinia, in aliquet est cursus. Pellentesque egestas cursus laoreet. Ut vitae ligula dapibus, volutpat nibh laoreet, bibendum libero. Nulla metus metus, ullamcorper nec orci sed, ullamcorper tempor mi. Etiam eget tortor a lectus hendrerit tempus. Etiam vehicula felis in erat sodales, sed porttitor elit volutpat. Donec bibendum dolor dui, vitae pulvinar sapien suscipit vitae.</p>
@@ -113,14 +99,14 @@
             </section>
         </main>
 
-      <footer class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <p>Footer!!!</p>
+        <footer class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>Footer!!!</p>
+                </div>
+                <!-- Ska innehålla info om copyright etc, kontakta oss, länkar till chalmers, kanske info om hur sidan skapats-->
             </div>
-            <!-- Ska innehålla info om copyright etc, kontakta oss, länkar till chalmers, kanske info om hur sidan skapats-->
-        </div>
-      </footer>
+        </footer>
 
       <!-- /container --><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- REMOVE http: when done!! -->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>

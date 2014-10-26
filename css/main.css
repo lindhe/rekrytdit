@@ -12,7 +12,23 @@
   margin-bottom: 2em; }
 
 #main {
+  /*Fix for the width on xs devices where #main becomes slightly too wide*/
   padding-left: 3em;
   padding-right: 3em; }
+
+.header-logo {
+  margin-top: -3em;
+  margin-right: -200px; }
+  .header-logo img {
+    width: 100px;
+    height: 100px; }
+
+.tabrow {
+  border-bottom: 1px solid #ddd; }
+  .tabrow ul {
+    border-bottom: none; }
+
+.navrow {
+  margin-top: 0.4em; }
 
 /*# sourceMappingURL=main.css.map */

@@ -25,4 +25,24 @@ $it-color: #09CDDA;
     padding-right: 3em;
 }
 
+.header-logo {
+	margin-top: -3em;
+	margin-right: -200px;
 
+	img {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+.tabrow {
+	border-bottom: 1px solid #ddd;
+
+	ul {
+		border-bottom: none;
+	}
+}
+
+.navrow {
+	margin-top: 0.4em;
+}

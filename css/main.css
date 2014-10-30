@@ -31,4 +31,13 @@
 .navrow {
   margin-top: 0.4em; }
 
+#nav-header .container {
+  position: relative; }
+
+.dep-logo {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  right: 100%; }
+
 /*# sourceMappingURL=main.css.map */

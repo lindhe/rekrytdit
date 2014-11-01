@@ -663,3 +663,11 @@ FileETag None
 #        SetOutputFilter INCLUDES
 #    </FilesMatch>
 # </IfModule>
+
+# ------------------------------------------------------------------------------
+# | Custom rewrites                                                         |
+# ------------------------------------------------------------------------------
+
+RewriteRule ^data #data
+RewriteRule ^it #it
+RewriteRule ^vs #vs

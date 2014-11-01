@@ -1,6 +1,13 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html {
+  min-height: 100%; }
+
+body {
+  color: white;
+  background-color: #171B1F; }
+
 .border {
   border: 1px solid black; }
 
@@ -8,8 +15,11 @@
   width: 150px;
   height: 150px; }
 
-.department nav {
-  margin-bottom: 2em; }
+.data *::selection {
+  background: #ED6D22; }
+
+.it *::selection {
+  background: #09CDDA; }
 
 #main {
   /*Fix for the width on xs devices where #main becomes slightly too wide*/
@@ -28,16 +38,62 @@
   .tabrow ul {
     border-bottom: none; }
 
-.navrow {
-  margin-top: 0.4em; }
+main article {
+  font-size: 1.4em; }
 
-#nav-header .container {
-  position: relative; }
+/*.navrow {
+	margin-top: 0.4em;
+}*/
+#nav-header {
+  font-size: 1.2em;
+  border-right: none;
+  border-left: none;
+  margin: 0 0 2em 0;
+  border-radius: 0; }
+  #nav-header .container {
+    position: relative; }
+
+#nav-header.data {
+  background-image: linear-gradient(to bottom, #ED6D22 0%, #171B1F 70%);
+  background-repeat: repeat-x; }
+
+#nav-header.it {
+  background-image: linear-gradient(to bottom, #09CDDA 0%, #171B1F 70%);
+  background-repeat: repeat-x; }
+
+#nav-header.vs {
+  background-image: linear-gradient(to bottom, #09CDDA 0%, #ED6D22 30%, #171B1F 70%);
+  background-repeat: repeat-x; }
 
 .dep-logo {
   height: 150px;
   width: 150px;
   position: absolute;
   right: 100%; }
+
+#footer {
+  text-align: center; }
+  #footer div div {
+    opacity: 0.5; }
+  #footer div:nth-child(2n) {
+    border-left: 1px solid #FFF9E9; }
+  #footer div:hover {
+    opacity: 1; }
+
+/*
+temporary fixes
+*/
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  background-color: #FFF8E3; }
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  color: black;
+  background-color: #BFBFA9; }
+
+.nav-tabs a {
+  color: #171B1F; }
+
+#nav-header .tabrow {
+  margin-bottom: 6px; }
 
 /*# sourceMappingURL=main.css.map */

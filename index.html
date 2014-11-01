@@ -16,7 +16,7 @@
 
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
-<body>
+<body class="data">
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -38,12 +38,9 @@
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
     </script>
-    <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <nav class="navbar navbar-default" role="navigation" id="nav-header">
+    <nav class="navbar navbar-default data" role="navigation" id="nav-header">
         <div class="container">
-            <div class="tab-content visible-lg-*">
+            <div class="tab-content visible-lg">
                 <img src="/img/data.png" class="dep-logo tab-pange fade data active in">
                 <img src="/img/vs.png" class="dep-logo tab-pange fade vs">
                 <img src="/img/it.png" class="dep-logo tab-pange fade it">
@@ -51,13 +48,13 @@
             <nav class="row tabrow" role="tablist">
                 <ul class="nav nav-tabs navbar-right">
                     <li class="active">
-                        <a href="#Data" data-target=".data" role="tab" data-toggle="tab">Data</a>
+                        <a href="#Data" data-target=".data" role="tab" data-toggle="tab" id="datatab">Data</a>
                     </li>
                     <li>
-                        <a href="#Data-VS-IT" data-target=".vs" role="tab" data-toggle="tab">vs</a>
+                        <a href="#Data-VS-IT" data-target=".vs" role="tab" data-toggle="tab" id="vstab">vs</a>
                     </li>
                     <li>
-                        <a href="#IT" data-target=".it" role="tab" data-toggle="tab">IT</a>
+                        <a href="#IT" data-target=".it" role="tab" data-toggle="tab" id="ittab">IT</a>
                     </li>
                 </ul>
             </nav>
@@ -159,7 +156,7 @@
                 </article>
 
                 <aside class="col-xs-12 col-sm-4">
-                    <div class="fb-like-box" data-href="https://www.facebook.com/DatateknikChalmers" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>
+                    <div class="fb-like-box" data-href="https://www.facebook.com/DatateknikChalmers" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>
                 </aside>
             </section>
         </section>
@@ -213,23 +210,22 @@
                 </article>
 
             <aside class="col-xs-12 col-sm-4">
-                <div class="fb-like-box" data-href="https://www.facebook.com/InformationsteknikChalmers" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>
+                <div class="fb-like-box" data-href="https://www.facebook.com/InformationsteknikChalmers" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>
             </aside>
         </section>
     </main>
 
-    <footer class="container">
+    <footer class="container" id="footer">
         <div class="row">
-            <div class="col-xs-12 col-md-4">
-                <p>Footer!!!</p>
+            <div class="col-xs-12 col-md-6">
+                <ul>
+                    <li><a href="http://www.chalmers.se/sv/Sidor/default.aspx">chalmers.se</a></li>
+                    <li><a href="https://dtek.se/portal">dtek.se</a></li>
+                </ul>
             </div>
-            <div class="col-xs-12 col-md-4">
-                <p>Footer!!!</p>
+            <div class="col-xs-12 col-md-6">
+                <p>Om sidan</p>
             </div>
-            <div class="col-xs-12 col-md-4">
-                <p>Footer!!!</p>
-            </div>
-            <!-- Ska innehålla info om copyright etc, kontakta oss, länkar till chalmers, kanske info om hur sidan skapats-->
         </div>
     </footer>
 

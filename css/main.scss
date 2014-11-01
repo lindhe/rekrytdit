@@ -7,6 +7,18 @@
 $data-color: #ED6D22;
 $it-color: #09CDDA;
 
+$theme-back: #171B1F;
+$theme-front: #FFF9E9;
+
+html {
+    min-height: 100%;
+}
+
+body {
+    color: white;
+    background-color: #171B1F;
+}
+
 .border {
     border: 1px solid black;
 }
@@ -16,8 +28,12 @@ $it-color: #09CDDA;
     height: 150px;
 }
 
-.department nav {
-    margin-bottom: 2em;
+.data *::selection {
+    background: $data-color;
+}
+
+.it *::selection {
+    background: $it-color;
 }
 
 #main { /*Fix for the width on xs devices where #main becomes slightly too wide*/
@@ -43,12 +59,38 @@ $it-color: #09CDDA;
 	}
 }
 
-.navrow {
-	margin-top: 0.4em;
+main article {
+    font-size: 1.4em;
 }
 
-#nav-header .container {
-    position: relative;
+/*.navrow {
+	margin-top: 0.4em;
+}*/
+
+#nav-header {
+    font-size: 1.2em;
+    border-right: none;
+    border-left: none;
+    margin: 0 0 2em 0;
+    border-radius: 0;
+    .container {
+        position: relative;
+    }
+}
+
+#nav-header.data {
+    background-image: linear-gradient(to bottom,$data-color 0%,$theme-back 70%);
+    background-repeat: repeat-x;
+}
+
+#nav-header.it {
+    background-image: linear-gradient(to bottom,$it-color 0%,$theme-back 70%);
+    background-repeat: repeat-x;
+}
+
+#nav-header.vs {
+    background-image: linear-gradient(to bottom, $it-color 0%, $data-color 30%, $theme-back 70%);
+    background-repeat: repeat-x;
 }
 
 .dep-logo {
@@ -56,4 +98,38 @@ $it-color: #09CDDA;
     width: 150px;
     position: absolute;
     right: 100%;
+}
+
+#footer {
+    text-align: center;
+
+    div div {
+        opacity: 0.5;
+    }
+    div:nth-child(2n) {
+        border-left: 1px solid $theme-front;
+    }
+    div:hover {
+        opacity: 1;
+    }
+}
+
+/*
+temporary fixes
+*/
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+background-color: #FFF8E3;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+color: black;
+background-color: #BFBFA9;
+}
+
+.nav-tabs a {
+    color: $theme-back;
+}
+
+#nav-header .tabrow {
+    margin-bottom: 6px;
 }

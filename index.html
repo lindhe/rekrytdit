@@ -50,9 +50,9 @@
                     <li class="active">
                         <a href="#Data" data-target=".data" role="tab" data-toggle="tab" id="datatab">Data</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#Data-VS-IT" data-target=".vs" role="tab" data-toggle="tab" id="vstab">vs</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="#IT" data-target=".it" role="tab" data-toggle="tab" id="ittab">IT</a>
                     </li>
@@ -84,32 +84,18 @@
             </div>
             <div class="collapse navbar-collapse" id="main-navigation">
                 <nav class ="row tab-content navrow" role="navigation">
-                    <ul class="nav nav-pills nav-justified tab-pane fade in active data" role="tablist">
-                        <li role="presentation" class="active">
-                            <a href="#hem" role="tab" data-toggle="pill">Hem</a></li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#om-data" data-toggle="pill">Om Data</a>
-                            <ul class="dropdown-menu" role="menu"><!-- ska kanske inte vara synlig för små enheter då navbar-collapse inte är konsekvent med utseendet för undermenyer. Tänk i så fall  på åtkomlighet för meny alternativen! -->
-                                <li role="presentation"><a href="#historia" role="tab" data-toggle="pill">Historia</a></li>
-                                <li role="presentation"><a href="#varfor-d" role="tab" data-toggle="pill">Varför D då?</a></li>
-                            </ul>
-                        </li>
+                    <ul class="nav nav-pills nav-justified tab-pane fade in active data tmp-nav-menu" role="tablist">
+                        <li role="presentation" class="active"><a href="#hem" role="tab" data-toggle="pill">Hem</a></li>
+                        <li role="presentation"><a href="#om-data" role="tab" data-toggle="pill">Om Datateknik</a></li>
                         <li role="presentation"><a href="#kontakta-oss" role="tab" data-toggle="pill">Kontakta oss</a></li>
-                        <li role="presentation"><a href="#ovrigt" role="tab" data-toggle="pill">Övrig information</a></li>
                     </ul>
                     <ul class="nav nav-pills nav-justified tab-pane fade vs" role="tablist">
                         <li role="presentation" class="active"><a href="#vs-hem" role="tab" data-toggle="pill">Hem</a></li>
                     </ul>
-                    <ul class="nav nav-pills nav-justified tab-pane fade it" role="tablist">
-                        <li role="presentation" class="active">
-                            <a href="#it-hem" role="tab" data-toggle="pill">Hem</a></li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#om-it" data-toggle="pill">Om IT</a>
-                            <ul class="dropdown-menu" role="menu"><!-- ska kanske inte vara synlig för små enheter då navbar-collapse inte är konsekvent med utseendet för undermenyer. Tänk i så fall  på åtkomlighet för meny alternativen! -->
-                                <li role="presentation"><a href="#it-historia" role="tab" data-toggle="pill">Historia</a></li>
-                                <li role="presentation"><a href="#varfor-it" role="tab" data-toggle="pill">Varför IT?</a></li>
-                            </ul>
-                        </li>
+                    <ul class="nav nav-pills nav-justified tab-pane fade it " role="tablist">
+                        <li role="presentation" class="active"><a href="#it-hem" role="tab" data-toggle="pill">Hem</a></li>
+                        <li role="presentation"><a href="#om-it" role="tab" data-toggle="pill">Om Informationsteknik</a></li>
                         <li role="presentation"><a href="#it-kontakta-oss" role="tab" data-toggle="pill">Kontakta oss</a></li>
-                        <li role="presentation"><a href="#it-ovrigt" role="tab" data-toggle="pill">Övrig information</a></li>
                     </ul>
                 </nav>
             </div>
@@ -120,18 +106,20 @@
             <section class="row">
                 <article class="tab-content col-xs-12 col-sm-8">
                     <div role="tabpanel" class="section-content tab-pane active fade in" id="hem">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis elit et velit mollis ullamcorper. Mauris scelerisque in neque quis imperdiet. Vivamus in eros id dui mattis molestie eget ac lorem. Mauris fringilla sapien at auctor imperdiet. Etiam aliquet sem et laoreet rhoncus. Phasellus posuere condimentum volutpat. Nulla sollicitudin, tortor non dignissim faucibus, lectus tortor pretium justo, eget malesuada risus lorem quis est. Etiam mattis, nunc eu viverra convallis, enim eros sollicitudin magna, non viverra diam enim et metus. Maecenas at scelerisque sem. In suscipit dolor eget malesuada accumsan. Etiam non mattis neque, et semper lectus. Aenean non congue tortor. Praesent ac libero ante. Donec quis erat scelerisque, ultricies libero quis, pulvinar quam. Morbi ultrices enim neque, ac varius velit sollicitudin non. Proin id vulputate dui, at tempus neque.</p>
-
-                      <p>Nunc sit amet hendrerit ex, sit amet suscipit ante. Nunc pulvinar sapien risus, non pretium augue venenatis et. Etiam lacinia condimentum neque sit amet aliquet. Nunc vitae orci eget lectus tincidunt egestas. Sed ac tortor gravida, pretium nunc eget, aliquet neque. Etiam fermentum ut dolor posuere suscipit. Curabitur porttitor turpis ex, et commodo ante suscipit non. Vivamus gravida dapibus mauris, ut pharetra ante porttitor non. Quisque nulla sapien, ultricies vel tortor et, elementum maximus quam.</p>
+                      <p>Hej, välkommen hit till Datateknik och Informationsteknik på Chalmers!</p>
+                      <p>Här kan du läsa om vad de olika programmen har att erbjuda, men framför allt är detta ett bra ställe att ha koll på för Dig som är intresserad eller har frågor om programmen! Vi anordnar emellanåt event dit just Du är välkommen där vi berättar om programmen, vilka skillnader som finns och varför det är ett bra val. Eller kanske du bara är ute efter att ställa lite frågor? I så fall kan du kontakta oss (under fliken "Kontakta oss"), så ska vi nog kunna hjälpa dig i dina funderingar.</p>
+                      <p>Vi har även två facebooksidor, en för Data och en för IT, där du kan få information om uppkommande event eller kanske bli påminnd om event som du EGENTLIGEN hade koll på men liksom hade glömt bort när det väl närmade sig.</p>
                     </div>
                     <div role="tabpanel" class="section-content tab-pane fade" id="historia">
                         <p>Datateknik på Chalmers startades 1982 som ett svar på den nya växande marknaden inom databranchen. ...</p>
                     </div>
-                    <div role="tabpanel" class="section-content tab-pane fade" id="varfor-d">
-                        <p>Som civilinjengör i datateknik får man möjlighet att jobba inom många intressanta och viktiga områden som kan vara allt ifrån att utveckla nya och bättre bromssystem för bilar till att skapa nästa facebook. Datorer finns överallt i vår vardag, och tar plats inom fler och fler marknader som ingen tidigare trodde.</p>
+                    <div role="tabpanel" class="section-content tab-pane fade" id="om-data">
+                        <p>Som injengör inom datateknik får man möjlighet att jobba inom många intressanta och viktiga områden som kan vara allt ifrån att utveckla nya och bättre bromssystem för bilar till att skapa nästa facebook. Datorer finns överallt i vår vardag, och tar plats inom fler och fler marknader som ingen tidigare trodde.</p>
                         <p>När du går upp på morgon väcks du förmodligen av din smartphone. När du sedan ska åka till skolan sätter du dig kanske i en bil. Moderna bilar är fulla av datorer - de har avancerade bränsleinsprutningssystem, ABS-bromsar och mycket mer. Eller så kanske du åker tåg. Tåget är också datorstyrt och är hela tiden uppkopplat till ett centralt system som avgör vilka tåg som får åka så att inga tåg kan krocka eller åka fel. När du ska ta spårvagnen vill du kolla tiderna, och då kopplar en app i din smartphone upp sig via internet så att du kan få den senaste informationen om förseningarna. Framme på skolan går du in genom dörren - som en dator öppnar automatiskt så fort du kommer nära.</p>
                         <p>Redan innan skoldagen börjat har du många gånger varit i kontakt med olika typer av datorer och om man kollade närmare skulle man finna många fler. Allt detta har utvecklats av datainjengörer.</p>
-                        <p>Läs mer om utbildningen på <a href="http://www.chalmers.se/sv/utbildning/program-pa-grundniva/Sidor/Datateknik.aspx">chalmers.se</a></p>
+                        <h1>300 eller 180 hp?</h1>
+                        <p>Civilinjengörsutbildningen (300 hp) har en bred teoretisk grund där man får lära sig precis hur en dator funkar från grunden och <i>varför</i> saker händer. Högskoleinjengörsutbildningen (180 hp) är mer arbetsmarknadsinriktad och erbjuder en god grund att stå på inför arbetslivet. Även denna har självklart många teoretiska delar, men utbildningen inriktar sig mer på <i>hur</i> saker funkar snarare än varför.</p>
+                        <p>Läs mer om utbildningarna på chalmers.se under sidorna för <a href="http://www.chalmers.se/sv/utbildning/program-pa-grundniva/Sidor/Datateknik.aspx" target="_blank">Datateknik civilinjengör</a> och <a href="http://www.chalmers.se/sv/utbildning/program-pa-grundniva/Sidor/Datateknik-180.aspx" target="_blank">Datateknik högskoleinjengör</a></p>
                     </div>
                     <div role="tabpanel" class="section-content tab-pane fade" id="kontakta-oss">
                         <p>Nå oss gör man enklast via mail på <a href="mailto:rekryt@dtek.se">rekryt@dtek.se</a> men vi finns även på våra två facebook sidor <a href="https://www.facebook.com/DatateknikChalmers" target="_blank">Datateknik Chalmers</a> och <a href="https://www.facebook.com/InformationsteknikChalmers" target="_blank">Informationsteknik Chalmers</a>. Där kommer information om evenemang och annat roligt vi hittar på!</p>
@@ -143,7 +131,7 @@
                         <a href="mailto:#">blbal@chalmers.se</a>
                         </p>
                     </div>
-                    <div role="tabpanel" class="section-content tab-pane fade" id="ovrigt">
+                    <div role="tabpanel" class="section-content tab-pane fade" id="datainjengor">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis elit et velit mollis ullamcorper. Mauris scelerisque in neque quis imperdiet. Vivamus in eros id dui mattis molestie eget ac lorem. Mauris fringilla sapien at auctor imperdiet. Etiam aliquet sem et laoreet rhoncus. Phasellus posuere condimentum volutpat. Nulla sollicitudin, tortor non dignissim faucibus, lectus tortor pretium justo, eget malesuada risus lorem quis est. Etiam mattis, nunc eu viverra convallis, en, ultricies libero quis, pulvinar quam. Morbi ultrices enim neque, ac varius velit sollicitudin non. Proin id vulputate dui, at tempus neque.</p>
 
                       <p>Nunc sit amet hendrerit ex, sit amet suscipit ante. Nunc pulvinar sapien risus, non pretium augue venenatis et. Etiam lacinia condimentum neque sit amet aliquet. Nunc vitae orci eget lectus tincidunt egestas. Sed ac tortor gravida, pretium nunc eget, aliquet neque. Etiam fermentum ut dolor posuere suscipit. Curabitur porttitor turpis ex, et commodo ante suscipit non. Vivamus gravida dapibus mauris, ut pharetra ante porttitor non. Quisque nulla sapien, ultricies vel tortor et, elementum maximus quam.</p>
@@ -165,16 +153,16 @@
         <section class="row tab-pane fade it department" id="IT">
             <article class="tab-content col-xs-12 col-sm-8">
                     <div role="tabpanel" class="section-content tab-pane active fade in" id="it-hem">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis elit et velit mollis ullamcorper. Mauris scelerisque in neque quis imperdiet. Vivamus in eros id dui mattis molestie eget ac lorem. Mauris fringilla sapien at auctor imperdiet. Etiam aliquet sem et laoreet rhoncus. Phasellus posuere condimentum volutpat. Nulla sollicitudin, tortor non dignissim faucibus, lectus tortor pretium justo, eget malesuada risus lorem quis est. Etiam mattis, nunc eu viverra convallis, enim eros sollicitudin magna, non viverra diam enim et metus. Maecenas at scelerisque sem. In suscipit dolor eget malesuada accumsan. Etiam non mattis neque, et semper lectus. Aenean non congue tortor. Praesent ac libero ante. Donec quis erat scelerisque, ultricies libero quis, pulvinar quam. Morbi ultrices enim neque, ac varius velit sollicitudin non. Proin id vulputate dui, at tempus neque.</p>
-
-                      <p>Nunc sit amet hendrerit ex, sit amet suscipit ante. Nunc pulvinar sapien risus, non pretium augue venenatis et. Etiam lacinia condimentum neque sit amet aliquet. Nunc vitae orci eget lectus tincidunt egestas. Sed ac tortor gravida, pretium nunc eget, aliquet neque. Etiam fermentum ut dolor posuere suscipit. Curabitur porttitor turpis ex, et commodo ante suscipit non. Vivamus gravida dapibus mauris, ut pharetra ante porttitor non. Quisque nulla sapien, ultricies vel tortor et, elementum maximus quam.</p>
+                      <p>Hej, välkommen hit till Datateknik och Informationsteknik på Chalmers!</p>
+                      <p>Här kan du läsa om vad de olika programmen har att erbjuda, men framför allt är detta ett bra ställe att ha koll på för Dig som är intresserad eller har frågor om programmen! Vi anordnar emellanåt event dit just Du är välkommen där vi berättar om programmen, vilka skillnader som finns och varför det är ett bra val. Eller kanske du bara är ute efter att ställa lite frågor? I så fall kan du kontakta oss (under fliken "Kontakta oss"), så ska vi nog kunna hjälpa dig i dina funderingar.</p>
+                      <p>Vi har även två facebooksidor, en för Data och en för IT, där du kan få information om uppkommande event eller kanske bli påminnd om event som du EGENTLIGEN hade koll på men liksom hade glömt bort när det väl närmade sig.</p>
                     </div>
                     <div role="tabpanel" class="section-content tab-pane fade" id="it-historia">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis elit et velit mollis ullamcorper. Mauris scelerisque in neque quis imperdiet. Vivamus in eros id dui mattis molestie eget ac lorem. Mauris fringilla sapien at auctor imperdiet. Etiam aliquet sem et laoreet rhoncus. Phasellus posuere condimentum volutpat. Nulla sollicitudin, tortor non dignissim faucibus, lectus tortor pretium justo, eget malesuada risus lorem quis est. Etiam mattis, nunc eu viverra convallis, enim eros sollicitudin magna, non viverra diam enim et metus. Maecenas at scelerisque sem. In suscipit dolor eget malesuada accumsan. Etiam non mattis neque, et semper lectus. Aenean non congue tortor. Praesent ac libero ante. Donec quis erat scelerisque, ultricies libero quis, pulvinar quam. Morbi ultrices enim neque, ac varius velit sollicitudin non. Proin id vulputate dui, at tempus neque.</p>
 
                       <p>Nunc sit amet hendrerit ex, sit amet suscipit ante. Nunc pulvinar sapien risus, non pretium augue venenatis et. Etiam lacinia condimentum neque sit amet aliquet. Nunc vitae orci eget lectus tincidunt egestas. Sed ac tortor gravida, pretium nunc eget, aliquet neque. Etiam fermentum ut dolor posuere suscipit. Curabitur porttitor turpis ex, et commodo ante suscipit non. Vivamus gravida dapibus mauris, ut pharetra ante porttitor non. Quisque nulla sapien, ultricies vel tortor et, elementum maximus quam.</p>
                     </div>
-                    <div role="tabpanel" class="section-content tab-pane fade" id="varfor-it">
+                    <div role="tabpanel" class="section-content tab-pane fade" id="om-it">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis elit et velit mollis ullamcorper. Mauris scelerisque in neque quis imperdiet. Vivamus in eros id dui mattis molestie eget ac lorem. Mauris fringilla sapien at auctor imperdiet. Etiam aliquet sem et laoreet rhoncus. Phasellus posuere condimentum volutpat. Nulla sollicitudin, tortor non dignissim faucibus, lectus tortor pretium justo, eget malesuada risus lorem quis est. Etiam mattis, nunc eu viverra convallis, enim cies libero quis, pulvinar quam. Morbi ultrices enim neque, ac varius velit sollicitudin non. Proin id vulputate dui, at tempus neque.</p>
 
                       <p>Nunc sit amet hendrerit exolor posuere suscipit. Curabitur porttitor turpis ex, et commodo ante suscipit non. Vivamus gravida dapibus mauris, ut pharetra ante porttitor non. Quisque nulla sapien, ultricies vel tortor et, elementum maximus quam.</p>
